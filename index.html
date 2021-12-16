@@ -3,12 +3,12 @@
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Membendung Gelombang Ketiga</title>
+  <title>Kepepet di Tengah Pengetatan</title>
   <meta http-equiv="pragma" content="no cache">
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <meta name="language" content="id" />
-  <meta name="title" content="Membendung Gelombang Ketiga"/>
+  <meta name="title" content="Kepepet di Tengah Pengetatan"/>
   <meta name="description" content="Indonesia diminta untuk mewaspadai gelombang ketiga Covid-19 seperti yang terjadi di dunia saat ini. Diprediksi gelombang ketiga Indonesia bisa terjadi pada Desember 2021 hingga Januari 2022 jika tidak diantisipasi." />
   <meta name="author" content="Tempo.co">
   <meta name="keywords" content="PKS">
@@ -22,7 +22,7 @@
   <meta property="og:title" content="Membendung Gelombang Ketiga"/>
   <meta property="og:description" content="Indonesia diminta untuk mewaspadai gelombang ketiga Covid-19 seperti yang terjadi di dunia saat ini. Diprediksi gelombang ketiga Indonesia bisa terjadi pada Desember 2021 hingga Januari 2022 jika tidak diantisipasi." />
   <meta property="og:image" content="assets/images/header.jpg">
-  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:title" content="Membendung Gelombang Ketiga" />
   <meta name="twitter:description" content="Indonesia diminta untuk mewaspadai gelombang ketiga Covid-19 seperti yang terjadi di dunia saat ini. Diprediksi gelombang ketiga Indonesia bisa terjadi pada Desember 2021 hingga Januari 2022 jika tidak diantisipasi." />
   <meta name="twitter:image:src" content="assets/images/header.jpg">
@@ -39,6 +39,10 @@
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <script src="https://d3js.org/queue.v1.min.js"></script>
   <script src="https://d3js.org/topojson.v1.min.js"></script>
+  <style>
+     /* language */
+     .language {cursor: pointer;}.language a,.dropdown a {display: flex;align-items: center;padding: 5pt 0;color: #fff;}a#id-country-dropdown, a#en-country-dropdown{border: 1px solid black;}.language img,.dropdown a img {width: 20px;}.country{display: none;}.country.active{display: block;}.id-content{display:block;}.en-content{display:none;}.dropdown {max-height:100px;background-color: #fff;padding: 5pt;border: 1px solid black;position: fixed;}.dropdown a{color:#000 !important;}
+</style>
   <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -61,27 +65,39 @@
  <body>
   <!-- navbar -->
   <div class="navbar">
-   <div class="row">
-    <div class="left-navbar">
-     <!-- burger -->
-     <div class="burger-container">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-     </div>
-    </div>
-    <div class="right-navbar">
-     <div class="logo-container">
-      <a href="https://interaktif.tempo.co" class="logo-container"> <img src="https://interaktif.tempo.co/public/frontend/images/logo-putih.png" alt="tempo"> </a>
-     </div>
-    </div>
-    <div class="center-navbar">
-     <a href="https://interaktif.tempo.co" class="logo-container"> interaktif </a>
-    </div>
-   </div>
-  </div>
-  <div class="menu-navbar close">
+     <div class="row">
+         <div class="left-navbar" style="position: relative;">
+             <ul>
+                 <li>
+                     <div class="burger-container">
+                         <span></span><span></span><span></span><span></span>
+                     </div>
+                 </li>
+                 <li>
+         <ul class="bahasa">
+                       <li><a href="#"><img src="https://interaktif.tempo.co/public/frontend/images/id.png" alt="id">ID</a>
+                           <ul class="sub">
+                               <li><a href="index.html"><img src="https://interaktif.tempo.co/public/frontend/images/id.png" alt="id">ID</a></li>
+                                 <li><a href="index-en.html"><img src="https://interaktif.tempo.co/public/frontend/images/en.png" alt="id">EN</a></li>
+                             </ul>
+                         </li>
+                     </ul>
+                 </li>
+             </ul>
+         </div>
+                       <div class="right-navbar" style="margin-right:10px;">
+                  <div class="logo-container">
+                      <a href="https://interaktif.tempo.co" class="logo-container">
+                          <img src="https://interaktif.tempo.co/public/frontend/images/logo-putih.png" alt="tempo">
+                      </a>
+                  </div>
+              </div>
+              <div class="center-navbar">
+                  <a href="https://interaktif.tempo.co" class="logo-container">interaktif</a>
+              </div>
+          </div>
+      </div>
+        <div class="menu-navbar close">
    <div class="row">
     <ul class="menu-list">
      <li><a href="https://interaktif.tempo.co/proyeks" class="proyek">Proyek</a></li>
@@ -112,13 +128,13 @@
   <div class="header">
    <div class="title-container">
     <h3>Longform</h3>
-    <h1>Membendung Gelombang Ketiga</h1>
+    <h1>Kepepet di Tengah Pengetatan</h1>
     <center>
      <span class="line"></span>
     </center>
-    <h3>Rabu, 20 Oktober 2021</h3>
-    <h5>Indonesia diminta untuk mewaspadai gelombang ketiga Covid-19 seperti yang terjadi di dunia saat ini. Diprediksi gelombang ketiga Indonesia bisa terjadi pada Desember 2021 hingga Januari 2022 jika tidak diantisipasi.</h5>
-    <h3>Oleh Inge Klara Safitri</h3>
+    <h3>Sabtu, 18 Desember 2021</h3>
+    <h5>Nasib pekerja migran Indonesia selama pandemi serba susah. Ada yang gajinya ditahan majikan, dipecat, bahkan nekat mencari kerja sampingan di tengah pengetatan. Memperingati Hari Pekerja Migran Internasional yang jatuh pada 18 Desember, Tempo bekerja sama dengan Malaysia Kini, memotret nasib para pejuang devisa di tengah pandemi Covid-19.</h5>
+    <h3>Oleh Cesar Akbar</h3>
     <div class="share-side close">
       <ul class="socmed-share">
           <li class="facebook">
@@ -145,37 +161,90 @@
   </div>
   <div class="body">
    <span class="start">
-     <p>Pemerintah terus melonggarkan aturan-aturan Pemberlakuan Pembatasan Kegiatan Masyarakat (PPKM). Pelonggaran-pelonggaran ini dilakukan setelah kondisi penyebaran <em>Coronavirus Disease 2019</em> (Covid-19) di Indonesia dinilai berkurang secara konsisten. Meski begitu, Indonesia belum bebas dari pandemi.</p>
-     <p>Peringatan untuk mewaspadai gelombang ketiga <a href="http://tempo.co/tag/covid19">Covid-19</a> sudah jauh-jauh hari disampaikan oleh Satuan Tugas (Satgas) Covid-19. Sejak September lalu, Juru Bicara Satgas Covid-19 Wiku Adisasmito meminta seluruh pihak untuk mengantisipasi kedatangan kembali ledakan kasus Covid-19. &ldquo;Kita harus waspada dan tetap disiplin protokol kesehatan agar kita tidak menyusul lonjakan ketiga dalam beberapa bulan ke depan," kata Wiku.&nbsp;</p>
-     <p>Di tingkat global, <a href="https://www.tempo.co/tag/gelombang-ketiga-covid-19">gelombang ketiga Covid-19</a> terjadi pada September lalu. Sebelumnya, gelombang pertama terjadi pada Januari 2021 dan puncak gelombang kedua terjadi April 2021. Sejumlah negara di Asia Tenggara yang memiliki pola kasus mirip tingkat global itu antara lain Vietnam dan Malaysia.&nbsp;</p>
-     <p>Meski Indonesia tak ikut terseret pola gelombang ketiga pada September lalu, disebutkan tetap berpotensi menghadapi gelombang ketiga Desember mendatang. Kekhawatiran akan gelombang ketiga Covid-19 ini disampaikan sejumlah kalangan, seperti epidemiolog dan Ikatan Dokter Indonesia (IDI). Pasalnya, di masa libur akhir tahun bisa menjadi penyebab peningkatan kembali kasus aktif Covid-19.&nbsp;</p>
-     <p>Presiden <a href="https://www.tempo.co/tag/joko-widodo">Joko Widodo</a> telah meminta jajarannya menyiapkan langkah-langkah mitigasi untuk mengantisipasi apabila terjadi gelombang ketiga Covid-19. Hal itu disampaikan Menteri Koordinator Bidang Kemaritiman dan Investasi Luhut Binsar Pandjaitan, &ldquo;Presiden menekankan kepada kami semuanya agar betul-betul berhati-hati dan menyiapkan seluruh langkah mitigasi apabila terjadi gelombang ketiga akibat Libur Natal dan Tahun Baru yang disebabkan oleh mobilitas masyarakat yang tinggi dan juga menurunnya efek imunitas pasca vaksinasi.&rdquo;</p>
-     <p>Atas arahan Jokowi itu, langkah antisipasi mulai disiapkan. Menteri Kesehatan <a href="https://www.tempo.co/tag/budi-gunadi-sadikin">Budi Gunadi Sadikin</a> mengatakan, pihaknya akan mengontrol aktivitas masyarakat selama hari raya Natal dan Tahun Baru dengan baik, agar tidak terjadi lonjakan ketiga kasus Covid-19. Pasalnya, pola peningkatan angka kasus Covid-19 di Indonesia memang berulang usai libur hari raya keagamaan. &ldquo;Hari raya keagamaan besar akan terjadi lagi itu di Desember, kalau kita bisa memastikan kita kontrol dengan baik, maka Januari dan Februari kita berhasil aman,&rdquo; kata Budi.</p>
-     <p>Sementara itu, Kepala Badan Nasional Penanggulangan Bencana (BNPB) sekaligus Ketua Satgas Penanganan Covid-19 Ganip Warsito menyatakan, ada dua langkah penting yang bisa dilakukan untuk mencegah kemunculan gelombang ketiga Covid-19. Dua langkah itu yakni menjalankan protokol kesehatan (prokes) secara ketat dan vaksinasi.&nbsp;</p>
-     <p>Selain dua langkah tersebut, pemerintah menyiapkan sejumlah strategi khusus. Strategi yang perlu diterapkan agar tren penurunan kasus yang tengah berlangsung tetap terjaga.</p>
-  </div>
+     <p>DI Tengah tekanan ekonomi, kehabisan tabungan, hingga keharusan mengirimkan uang untuk anaknya di kampung halaman, Tini Taturia memutuskan nekat bekerja pada pertengahan 2021. Padahal pekerja migran Indonesia ini tahu, pemerintah Malaysia sedang menerapkan <em>lockdown.</em> </p>
+     <p>Hasilnya, Tiny mesti berurusan dengan Polisi Diraja Malaysia. Ia ditangkap. "Saya minta maaf kalau saya melanggar. Karena saya pun tak punya apa-apa untuk makan, makanya terpaksa keluar mencari uang. Mereka pun paham. Saya disuruh pulang ke rumah, diam di rumah, enggak usah keluar gitu," kata Tiny menceritakan ulang insiden ini kepada <em>Tempo</em> pada awal Desember lalu.</p>
+     <p>Sejak pandemi menghantam seluruh belahan bumi, termasuk Malaysia, nasib Tiny memang sengsara. Begitu pagebluk menghajar, pemerintah Malaysia memutuskan menarik rem dengan menerapkan <em>lockdown</em>.</p>
+     <p>Pemerintah Malaysia setempat melarang orang untuk bekerja. Tiny dan suami pun hanya bisa tinggal di rumahnya di Puchong, kota utama di distrik Petaling, Selangor. Tak ada gaji yang diterima pasangan asal NTT itu. Mereka terpaksa menyetop mengirimkan duit untuk anak semata wayangnya di kampung.</p>
+     <p>"Tidak pernah saya kirim uang ke Indonesia sampai sekarang pun. Dari pandemi periode pertama sampai saat ini," kata Tiny. Untuk makan sehari-hari, ia dan suami hanya bisa menggantungkan nasib pada bantuan dari majikannya, pemerintah Indonesia, hingga gereja.</p>
+     <p>Situasi mencekam itu sempat melonggar pada awal 2021. Mulai Februari, Tiny bekerja sebagai tukang bersih-bersih atau <em>cleaning service</em> panggilan dengan upah 64 ringgit atau sekitar Rp 218 ribu. Namun, baru beberapa bulan bekerja, pemerintah setempat kembali menarik rem darurat lantaran merebaknya varian delta di pertengahan tahun. Ia kembali menganggur.</p>
+<div class="flourish-embed flourish-chart" data-src="visualisation/8134705"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+   </div>
   <center>
   <div class="card">
     <img src="https://images.unsplash.com/photo-1615147342761-9238e15d8b96?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1001&q=80" class="card__image" alt="brown couch" />
     <div class="card__content">
-      <time datetime="2021-03-30" class="card__date">30 März 2021</time>
-      <span class="card__title">Duis autem vel eum iriure dolor in hend in vulputate<span>
+      <time "2021-03-30" class="card__date">Baca cerita sebelumnya</time>
+      <span class="card__title">Kuldesak Lantaran Pandemi<span>
+  <br>
+
+        <span class="card__date">Banyak pekerja migran Indonesia terkena dampak pandemi Covid-19. Mereka dipecat tanpa pesangon, bahkan ada yang bekerja tanpa upah. Pemerintah dinilai kurang gigih memperjuangkan mereka. Memperingati Hari Pekerja Migran Internasional yang jatuh pada 18 Desember, Tempo bekerjasama dengan The Sasakawa Peace Foundation, Jepang, memotret nasib para pejuang devisa di tengah pandemi Covid-19.
+<span>
+  <br>        <br>
+
+        <div class="btn-container">
+       <center> <button>Read More</button </center>
+        </div>
     </div>
   </div>
 </center>
   <div class="body">
-     <img src="assets/images/grafiscovid.jpg" alt="tempo">
-<p><a href="https://www.tempo.co/tag/luhut-binsar-pandjaitan">Luhut</a> mengatakan, hingga saat ini, situasi pandemi Covid-19 terus terkendali pada tingkat yang rendah. Kasus konfirmasi Indonesia dan Jawa-Bali disebut masing-masing telah turun hingga 99 persen dibandingkan puncaknya pada 15 Juli lalu. &ldquo;Rendahnya kasus konfirmasi harian menyebabkan kasus aktif nasional dan Jawa- Bali terus menunjukkan penurunan,&rdquo; ujarnya.</p>
-<p>Berdasarkan data pemerintah, jumlah kasus yang tersisa kurang dari 20 ribu kasus aktif di nasional dan kurang dari 8 ribu kasus aktif di Jawa-Bali. Angka ini jauh menurun dibandingkan lebih dari 570 ribu kasus aktif pada puncak ledakan varian Delta Covid-19 beberapa bulan terakhir. Ia melanjutkan, situasi yang terus membaik juga tercermin dari kasus kematian di beberapa provinsi Jawa Bali yang mencatat nol kematian akibat Covid-19.&nbsp;</p>
-<div class="flourish-embed flourish-map" data-src="visualisation/7568157"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-<p>Pada 17 Oktober, DKI Jakarta, Jawa Barat, DI Yogyakarta, dan Bali mencatat nol kematian. Sedangkan provinsi lain di Jawa Bali hanya mencatat di bawah 5 kematian per hari. Luhut pun optimistis tingkat kematian rendah mampu dijaga seiring dengan peningkatan capaian vaksinasi di wilayah Jawa-Bali. Meski begitu, Luhut tetap mengajak seluruh masyarakat untuk terus menjaga protokol kesehatan agar Covid-19 tidak kembali melonjak. &ldquo;Tetap gunakan masker, ajak keluarga, saudara, dan teman-teman yang belum divaksin untuk segera divaksin, dan jangan lupa untuk terus secara disiplin menggunakan Peduli Lindungi,&rdquo; ujarnya.</p>
-<p>Dicky Budiman, Epidemiolog dari Griffith University menilai, Indonesia masih dalam tingkatan kasus Covid yang buruk. Bahkan menurut dia, meskipun cakupan vaksinasi di sejumlah wilayah sudah cukup tinggi, masyarakat masih bisa terinfeksi, karena level transmisi yang masih buruk. "Contohnya, kota metropolitan seperti hal nya Jakarta yang menjadi hub dan aktif sekali pergerakan manusia nya. Ditambah yang datang ke DKI bukan hanya penduduk DKI saja," kata Dicky.</p>
-<div class="flourish-embed flourish-chart" data-src="visualisation/7568887"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-<div class="flourish-embed flourish-chart" data-src="visualisation/7568829"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-<p>Sementara itu, Ketua Tim Mitigasi Pengurus Besar Ikatan Dokter Indonesia (PB IDI) Dr Adib Khumaidi mengatakan bahwa sebenarnya Indonesia sudah melewati gelombang ketiga pandemi Covid-19. Adib menjelaskan, beberapa ahli menyebutkan gelombang ketiga di Indonesia sudah terjadi saat varian Delta menyebar bertepatan dengan pascalibur lebaran Juli-Agustus 2021. Sebab, gelombang pertama terjadi pada Agustus 2020 dan gelombang kedua pada Januari-Februari 2021 pascalibur akhir tahun.</p>
-<p>&ldquo;Kita sebenarnya sudah mengalami gelombang ketiga, ada beberapa pakar yang berbeda pendapat mengatakan bahwa sebenarnya kita sudah melalui gelombang ketiga, karena gelombang kedua itu dianggap pada Agustus tahun lalu, jadi di Juli itu kemarin sudah masuk gelombang ketiga,&ldquo; kata Adib.</p>
-<p>Meski begitu, ia berharap pemerintah dan masyarakat tetap waspada, sehingga tak ada lagi gelombang baru kasus Covid-19 dan tidak ada lagi tenaga medis yang meninggal dunia akibat pandemi Covid-19. &ldquo;Situasi pandemi yang kini semakin membaik harus dipertahankan oleh semua pihak agar tidak terjadi lagi lonjakan kasus.&rdquo;</p>
-                   </div>
+    <p>Di tengah kesusahan, Tiny dan suami sempat berpikiran untuk pulang. Namun, angan itu harus disimpan rapat-rapat lantaran biaya yang sangat tinggi, sekitar 1.800 ringgit atau Rp 6 juta per orang. "Bagaimana kami ambil tiket itu? Sekarang ada keluarga yang meninggal karena Covid-19 di kampung halaman, kami hanya menangis saja dari jauh," kata dia. Akhirnya hingga sekarang Tiny hanya bisa bergantung pada nasib.</p>
+<p>Kisah seperti Tiny hanya sepenggal dari keseluruhan kisah pekerja migran Indonesia di negeri orang. Berdasarkan data Badan Perlindungan Pekerja Migran Indonesia per November 2021, pengaduan dari para buruh migran juga paling banyak berasal dari Malaysia. Sejak Januari-November 2021, ada 367 aduan dari pekerja di Negeri Jiran, dari total 1.553 aduan yang masuk dari seluruh negara penempatan.</p>
+<div class="flourish-embed flourish-chart" data-src="visualisation/8136031"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+<div class="rcorners4">
+    <center> <h1>Terkatung-katung Setelah Pulang Kampung</h1> </center>
+    <br>
+        <center><h3>Para pekerja migran Indonesia yang memutuskan kembali ke tanah air selama pandemi Covid-19 kesulitan mencari pekerjaan. Tak mendapat bantuan sosial.
+        </h3> </center>
+        <p>CARMINAH baru satu pekan tiba di Brunei Darussalam ketika Edi, suaminya yang mengidap sakit paru-paru, meninggal pada Maret 2019. Padahal, perempuan asal Karawang, Bekasi, Jawa Barat ini berangkat sebagai pekerja migran untuk mencari biaya pengobatan sang suami di rumah.&nbsp;</p>
+     <p>Kabar duka itu pun baru sampai kepada Carminah setelah 40 hari meninggalnya Edi. &ldquo;Kaget dan sedih, rasanya campur-aduk<em>,</em>&rdquo; kata Carminah, 50 tahun, kepada<em>Tempo</em> pada awal Desember 2021.&nbsp;</p>
+  <div class="glossary">
+   <span id="text">
+<p>Namun, Carminah tak bisa berbuat apa-apa. Saat kabar itu tiba, ibu empat anak ini baru satu pekan bekerja sebagai asisten rumah tangga. Ia harus menanggung ongkos perjalanan sendiri jika nekat pulang.&nbsp;</p>
+<p>Keinginan untuk menengok keluarga sempat terbersit lagi setahun kemudian, atau sekitar 1.000 hari setelah meninggalnya sang suami. Menurut Carminah, majikannya di Brunei sebenarnya mengizinkan, lagi-lagi asalkan menanggung ongkos perjalanan sendiri.&nbsp;</p>
+<p>&ldquo;Tapi gaji ditahan. Aku bingung, terus pulang bawa apa,&rdquo; kata Carminah. Walhasil, Carminah memaksakan bekerja hingga habis masa kontrak kerja.&nbsp;</p>
+<p>Sebelum memutuskan berangkat, Carminah dijanjikan upah 300 ringgit Brunei (sekitar Rp 3,1 juta dengan kurs saat ini) setiap bulan. Namun nyatanya dia mesti menghadapi potongan gaji sebesar 100 ringgit selama sepuluh bulan. &ldquo;Katanya buat agen,&rdquo; ucapnya.</p>
+<p>Carminah akhirnya baru bisa pulang ke Indonesia pada Maret tahun ini. Gajinya dibayarkan, ongkos pulang pun ditanggung oleh majikan. Menurut Carminah, bosnya sebenarnya bakal memperpanjang kontrak jika dirinya tak meminta pulang. &ldquo;Karena susah cari pekerja lagi di masa Covid-19,&rdquo; kata Carminah.</p>
+<p>Sepulangnya ke Indonesia, Carminah mesti kembali berjibaku mencari pendapatan. Sejak suaminya sakit dan meninggal, ia menjadi satu-satunya yang menanggung beban keuangan keluarga. Dia harus mencukupi biaya kehidupan dua anak&mdash;anak pertama dan keduanya telah berkeluarga&mdash;dan neneknya yang sakit karena usia.</p>
+<p>Selama tiga bulan terakhir, Carminah bekerja sebagai pengasuh bayi dengan gaji Rp 1,2 juta saban bulan. Ia mengaku belum pernah menerima bantuan sosial dari pemerintah yang digelontorkan untuk masyarakat miskin di masa pandemi Covid-19. &ldquo;Didata sudah, tapi belum pernah dapat,&rdquo; tutur Carminah.</p>
+<p>Gelombang besar kepulangan pekerja migran Indonesia terjadi sejak pandemi Covid-19 melanda. Menteri Koordinator Bidang Perekonomian Airlangga Hartarto mengatakan ada 24 ribu lebih PMI yang kembali pada April lalu. Di bulan Mei 2021, angkanya sekitar 25 ribu. Pada April 2020 lalu, Menteri Ketenagakerjaan Ida Fauziyah menyebut ada 88.759 pekerja migran Indonesia yang kembali ke Tanah Air.&nbsp;</p>
+<p>Dalam proses kepulangan ke Indonesia, sebagian pekerja migran juga mesti berjibaku dengan aturan karantina. Merujuk Surat Edaran Satuan Tugas Covid-19 Nomor 23 Tahun 2021, PMI yang kembali dari luar negeri menjalani karantina dengan biaya ditanggung negara. Namun nyatanya, ada pula PMI yang harus menanggung ongkos karantina secara mandiri.</p>
+<p>Mantan PMI dari Singapura, Arumy Muzadhy bercerita, seorang temannya mesti membayar biaya karantina mandiri di sebuah hotel di Surabaya. Padahal, perempuan yang berasal dari Banyuwangi itu terpaksa pulang karena mengalami pemutusan hubungan kerja.&nbsp;</p>
+<p>&ldquo;Biaya karantina ternyata harus dibayar sendiri tanpa ada pemberitahuan sebelumnya,&rdquo; kata Arumy, yang kini bekerja di sebuah agensi yang menangani isu-isu pekerja migran ini.</p>
+<p>Pada Juli lalu, majalah <em>Tempo </em>menulis kejanggalan karantina di hotel, termasuk yang dialami sejumlah tenaga kerja Indonesia. Titin, 43 tahun, mendapat tempat isolasi mandiri bersama sejumlah temannya di sebuah hotel di Tangerang, Banten, sekembali dari Taiwan pada pertengahan Januari lalu.</p>
+<p>Sebelumnya, kata Titin, petugas di bandara menyebutkan bahwa mereka akan mendapat penginapan dan tes PCR gratis. Namun mereka dimintai duit Rp 1,6 juta untuk dua kali uji usap. Titin dan teman-temannya sempat berdemonstrasi. &ldquo;Akhirnya tarif itu diturunkan jadi Rp 800 ribu,&rdquo; kata Titin, Juli lalu.</p>
+<p>Direktur Migrant Care Anis Hidayah mengatakan para pekerja migran yang pulang di masa pandemi Covid-19 ini berpotensi menjadi pengangguran baru. Lapangan pekerjaan di dalam negeri berkurang karena pagebluk, mereka pun sulit berangkat lagi ke luar negeri. Menurut Anis, sebagian dari mereka mulai menjual aset atau berutang demi memenuhi kebutuhan hidup.</p>
+<p>Anis menjelaskan, Organisasi Buruh Dunia (ILO) telah mengeluarkan enam rekomendasi agar pekerja migran yang rentan masuk ke dalam prioritas kebijakan responsif Covid-19. Masalahnya, ia menilai belum ada program yang lebih nyata dari negara.</p>
+<p>Pemerintah sebenarnya memiliki beberapa program bantuan sosial untuk masyarakat yang terimbas Covid-19. Misalnya program subsidi bantuan upah melalui Kementerian Ketenagakerjaan, sebesar Rp 600 ribu untuk pekerja bergaji di bawah Rp 5 juta.&nbsp;</p>
+<p>Namun kata Anis, pekerja migran yang pulang ke Indonesia tak termasuk kategori ini kendati mereka terdaftar sebagai anggota Badan Penyelenggara Jaminan Sosial (BPJS) Ketenagakerjaan. &ldquo;Mereka tak masuk kategori karena setelah pulang statusnya sudah bukan pekerja,&rdquo; kata Anis kepada <em>Tempo,</em> November lalu.</p>
+<p>Di sisi lain, Anis melanjutkan, para pekerja migran yang pulang ke Indonesia kerap tak mendapatkan bantuan yang disalurkan Kementerian Sosial. Anis mengatakan, skema bansos acap kali tak berlaku bagi para pekerja migran. &ldquo;Mereka dianggap bukan keluarga miskin.&rdquo;</p>
+<p>Tak sedikit pula pekerja migran pulang ke Tanah Air dengan duit pas-pasan. Koordinator Migrant Care Kabupaten Kebumen, Jawa Tengah, Syaipul Anas mengatakan, sebagian PMI nekat pulang kendati sisa gaji mereka tak dibayarkan. Menurut Anas, hal semacam ini terjadi di awal penyebaran wabah corona pada awal tahun lalu.</p>
+<p>&ldquo;Rata-rata takut wabah Covid-19. Ada yang berpikiran, ya sudahlah kalau tidak dibayar, yang penting bisa pulang,&rdquo; kata Anas. Sejak awal pandemi hingga April 2021, kata Anas, setidaknya 40 PMI asal Kebumen pulang dari beberapa negara penempatan seperti Arab Saudi, Taiwan, Hong Kong, hingga Malaysia.</p>
+<p>Anas mengatakan sebenarnya ada sejumlah program pemerintah daerah yang bisa diakses para purna-PMI. Misalnya, program pelatihan seperti keterampilan membatik, memasak, membuat makanan ringan, hingga berbisnis.</p>
+<p>Di Kebumen, Anas mendampingi ratusan purna-PMI dari lima desa. Mereka membentuk komunitas yang masing-masing beranggotakan 20 hingga 25 orang. Peserta berkumpul dalam satu komunitas berdasarkan minat pelatihan yang ingin diikuti.&nbsp;</p>
+<p>Setiap komunitas lantas mengajukan proposal pelatihan kepada dinas tertentu, misalnya Dinas Ketenagakerjaan dan Koperasi UKM. Usai pelatihan, mereka mengembangkan wirausaha.&nbsp;</p>
+<p>Menurut Anas, eks PMI tersebut biasanya patungan untuk modal usaha perdana. Kapital awal bisa juga berasal anggota komunitas yang memiliki kemampuan finansial berlebih. &ldquo;Kalau program-program keuangan jarang kami terima,&rdquo; ujarnya.</p>
+<p>Kepala Badan Perlindungan Pekerja Migran Indonesia (BP2MI) Benny Rhamdani mengklaim pemerintah berupaya melindungi para tenaga kerja Indonesia, termasuk yang sudah kembali ke Tanah Air. Ia mengatakan mandat ini tertuang lewat Undang-Undang Nomor 18 Tahun 2017 tentang Pelindungan Pekerja Migran Indonesia.</p>
+<p>Wakil Ketua Umum Partai Hanura ini menyebut, BP2MI berencana merilis dua program untuk purna-PMI yang sudah pulang. Pertama, komunitas relawan Pekerja Migran Indonesia yang dinamakan Kawan PMI. Menurut Benny, kepengurusan Kawan PMI akan dibentuk di 260 kabupaten/kota di Indonesia yang menjadi kantong pekerja migran.</p>
+<p>Adapun yang kedua disebut Perwira PMI, singkatan dari Perkumpulan Wirausaha PMI. &ldquo;Ini untuk mereka yang sukses dan kembali ke Indonesia dan ingin berbisnis,&rdquo; ucapnya. Benny mengimbuhkan, dua program itu bakal diluncurkan pada 18 Desember, bertepatan dengan Hari Buruh Migran Internasional.</p>
+    </span>
+  </div>
+  <div class="btn-container">
+ <center> <button id="toggle">Read More</button> </center>
+  </div>
+</div>
+<p>Sementara itu, kalau dilihat dari jenis masalah yang diadukan, paling banyak adalah PMI minta dipulangkan, yaitu sebanyak 486 aduan. Masalah lainnya yang masuk lima besar persoalan yang diadukan antara lain gaji tidak dibayar, meninggal di negara orang, perdagangan orang, hingga penipuan peluang kerja.&nbsp;</p>
+<p>Human Trafficking Watch mengakui permasalahan ketenagakerjaan seperti penipuan dan perdagangan orang memang masih membayangi para PMI. Perwakilan HTW di Malaysia, Dewi Kholifah, menuturkan kebanyakan pekerja yang mengadu berasal dari sektor konstruksi, serta pekerja domestik.&nbsp;</p>
+<p>Menurut dia, banyak pekerja Indonesia yang mengadu ke HTW tidak tahu harus berbuat apa ketika mengalami masalah ketenagakerjaan atau kekerasan. &ldquo;Banyak yang datang ke sini tidak tahu apa itu KBRI, apa itu kedutaan dan di mana. Nah sampai segitu. Bahkan tidak bisa menulis namanya sendiri,&rdquo; ujar Dewi.</p>
+<p>Ketidaktahuan mereka sering kali dimanfaatkan para sindikat. Dewi menceritakan sering para pekerja yang mengadu memiliki izin tinggal yang sah, namun tidak memiliki paspor lantaran dokumen itu dipegang oleh majikan atau agennya. Sehingga, pekerja tersebut terjebak.&nbsp;</p>
+<p>Kasus lainnya, ia juga pernah menemukan pekerja yang diminta menandatangani kontrak tanpa mengetahui isinya. Akibatnya, pekerja tersebut dimanfaatkan oleh agen tanpa bayaran yang setimpal. &ldquo;Walaupun mereka direkrut secara sah, tapi sampai di sini permasalahan timbul banyak pelanggaran-pelanggaran seperti ini. Inilah yang perlu kami tengahkan sehingga pemerintah memberi perlindungan kepada para pekerja migran Indonesia,&rdquo; ujar Dewi.&nbsp;</p>
+<p>Perwakilan Migrant Care di Malaysia, Alex Ong, mengatakan di masa pandemi ini warga tak berdokumen memang menjadi pihak paling pertama yang mengalami dampaknya. Sebab, mereka kebanyakan bergantung kepada pekerjaan harian. Sehingga, ketika pemerintah setempat melarang mobilitas, mereka pun menganggur dan tak punya pemasukan untuk makan, bayar sewa rumah, dan lainnya.&nbsp;</p>
+<p>Di situasi yang serba sulit itu, para pekerja sosial, bahkan Kedutaan Besar Republik Indonesia juga susah menjangkau para pekerja migran yang tersebar itu. &ldquo;Jadi kita mau turun bawa barang enggak bisa, kita mau apa. Pokoknya kita hanya melihat mereka menderita. Jadi ini kan satu tantangan besar dan dalam suasana yang pertama kali kita menghadapi situasi seperti itu,&rdquo; ujarnya. </p>
+<p>Alex menceritakan organisasinya baru bisa ke lapangan setelah berbekal surat mitra dari KBRI dan diperkenankan oleh pemerintah setempat. Situasi terparah yang pernah ia lihat adalah ketika menemukan ada sekitar 14 orang warga Indonesia tinggal di lokasi pembuangan terpaksa memakan makanan dari tempat sampah lantaran kekurangan pasokan. Karena itu, ia mengatakan bantuan makanan menjadi fokus utama untuk menyelamatkan para WNI tersebut.</p>
+<p>Di samping soal makanan, Alex berujar kasus-kasus eksploitasi pekerja hingga kekerasan fisik majikan kepada para PMI masih terus terjadi. Namun, di situasi tersebut, kantor Migrant Care yang berada di kondominium tak bisa menampung orang luar. Biasanya, kata dia, dalam situasi normal, markas Migrant Care acap kali menjadi tempat bernaung para PMI yang butuh perlindungan.</p>
+<div class="flourish-embed flourish-chart" data-src="visualisation/8135639"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+         </div>
   <div class="credit">
    <h2>CREDIT</h2>
    <p class="wordwide">Penulis</p>
@@ -228,5 +297,21 @@
   <script src="https://interaktif.tempo.co/public/frontend/js/scrollmagic/ScrollMagic.min.js"></script>
   <script src="https://interaktif.tempo.co/public/frontend/js/logic.js"></script>
   <script src="assets/js/map.js"></script>
+  <script>$(document).ready(function() {
+  $("#toggle").click(function() {
+    var elem = $("#toggle").text();
+    if (elem == "Read More") {
+      //Stuff to do when btn is in the read more state
+      $("#toggle").text("Read Less");
+      $("#text").slideDown();
+    } else {
+      //Stuff to do when btn is in the read less state
+      $("#toggle").text("Read More");
+      $("#text").slideUp();
+    }
+  });
+});
+</script>
+
   </body>
 </html>

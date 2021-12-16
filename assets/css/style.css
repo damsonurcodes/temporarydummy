@@ -43,6 +43,93 @@ div.tooltip {color: #fff;background-color: rgb(0,0,0,0.7);padding: .5em;border-r
  --border-radius-primary: 32px;
 }
 
+.card button{
+  user-select:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  cursor:pointer;
+  border:none;
+  padding:8px;
+  font-size:20px;
+  box-sizing:border-box;
+  border-radius: 7px;
+}
+
+/* tab */
+ul.tabs{display:grid;list-style-type:none;padding:0;grid-template-columns: repeat(4 , 25%);font-family: 'Montserrat', sans-serif;}
+ul.tabs li{background: #ffffff;border: 0.5px solid #9a9191;color: #9a9191;text-align: center;padding: 10px 20px;cursor: pointer;margin: 1%}
+ul.tabs li:hover{background: #9a9191;color: #ffffff;}
+ul.tabs li.current{background: #9a9191;color: #ffffff;border: 0.5px solid #ffffff}
+.tab-content{display: none;background: #ededed;padding: 15px;position: relative;opacity: 0;visibility: hidden;}
+.tab-content.current{display: block;visibility: visible;opacity: 1;animation: fade 1s;}
+.head-tab{display:flex;}
+.tutup{font-size: 50px;font-weight: bold;position: absolute;bottom: 5px;right: 5px;}
+.tutup:hover{cursor: pointer;color: #9a9191;}
+ul.bahasa{margin:0; padding:0 10px;  width:auto; display:inline-flex; height:50px; font-size:12px;}
+ul.bahasa a{color:#fff;display: inline-flex;
+  align-items: center;}
+ul.bahasa li{width:100%; display:inline-flex; align-items:center; justify-content:center;flex-direction:column; position:relative; height:auto; padding:5px;}
+ul.bahasa li img{width:20px; height:20px; float:left; margin-right:5px;}
+ul.bahasa li ul.sub{display:none;}
+ul.bahasa li:hover ul.sub{display:block; position:absolute; top:100%; left:0; right:0; height:auto; background:#000; overflow:hidden; margin:0; padding:0; margin:0 -10px;}
+ul.bahasa li ul.sub li{width:100%; display:inline-flex; align-items:flex-start; justify-content:center; flex-direction:column; position:relative; height:auto; padding:10px; border:none; margin:0;}
+ul.bahasa li ul.sub li:hover{background:#333;}
+.left-navbar ul li:first-child{display:flex; align-items:center; justify-content:center;}
+@keyframes openLg {0% { top:-100px; }100%{top: 0;}}
+@keyframes closeLg {0%{top: 0;}100% { top: -100px;}}
+@keyframes fade {0% {opacity: 0;}100% {opacity: 1;}}
+
+@media only screen and (max-width: 950px) {
+ul.tabs {display: block;}
+.tab-content h3{width: 90%}
+}
+
+.rcorners4 {
+  border-radius: 15px;
+  border: 1.5px solid black;
+  padding: 20px;
+}
+
+.rcorners4 h3{
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.rcorners4 h1{
+  font-size: 32px;
+}
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+#text{
+display:none;
+}
+
+.rcorners4 btn-container{
+  margin: auto;
+  height:44px;
+  width:166.23px;
+}
+
+a:active{
+  color:#ffd323;
+}
+.rcorners4 button{
+  user-select:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  cursor:pointer;
+  border:none;
+  padding:8px;
+  font-size:20px;
+  box-sizing:border-box;
+  border-radius: 7px;
+}
+.rcorners4 p{
+  font-size:15px;
+}
+
+
 .card__image {
   width: 100%;
   max-height: 300px;
@@ -72,7 +159,6 @@ div.tooltip {color: #fff;background-color: rgb(0,0,0,0.7);padding: .5em;border-r
   font-family: var(--font-family-secondary);
   font-size: var(--font-size-caption);
   line-height: var(--line-height-caption);
-  text-transform: uppercase;
   color: var(--color-text);
   margin-bottom: 6px;
 }
@@ -89,7 +175,6 @@ div.tooltip {color: #fff;background-color: rgb(0,0,0,0.7);padding: .5em;border-r
   color: var(--color-text);
   -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
-  background-image: linear-gradient(90deg, var(--color-highlight-primary), var(--color-highlight-secondary));
   background-size: 100% 42%;
   background-repeat: no-repeat;
   background-position: 0 85%;
